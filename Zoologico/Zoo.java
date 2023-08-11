@@ -34,7 +34,8 @@ public class Zoo {
             }
             
             bichos[i].emitirSom();
-           // System.out.println();
+            System.out.println();
+            
 
             if (bichos[i] instanceof Animal) {
                 System.out.println(bichos[i].getNome() + "eh um Animal. ");
