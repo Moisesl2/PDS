@@ -2,9 +2,9 @@ public class Zoo {
 
     public static void main(String[] args) {
         Animal animal = new Animal("Bicho ", 8);
-        Vaca vaca = new Vaca("Mimosa ",4);
-        Gato gato = new Gato("Garfield ",4);
-        Ovelha ovelha = new Ovelha("Dolly ",4);
+        Vaca vaca = new Vaca("Mimosa ",4, "Preto e Branco");
+        Gato gato = new Gato("Garfield ",4, "Amarelo");
+        Ovelha ovelha = new Ovelha("Dolly ",4, "Preta");
         Animal bichos[] = {animal, vaca, gato, ovelha};
 
         // Aqui, cada instancia eh de um tipo especializado
