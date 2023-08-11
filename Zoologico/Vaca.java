@@ -7,7 +7,7 @@ public class Vaca extends Animal {
     }
 
     public void emitirSom(){
-        System.out.println(" Muuuuu");
+        System.out.println(" MUUUUU");
         
     }
 

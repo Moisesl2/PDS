@@ -37,13 +37,16 @@ public class Zoo {
            // System.out.println();
 
             if (bichos[i] instanceof Animal) {
-                System.out.println(bichos[i].getNome() + "eh um Animal. ");
+                System.out.println(bichos[i].getNome() + "eh um Animal. "); //houve a necessidade de modificar "nome" para "getNome" ns linhas 25 e 40.
             }
 
             System.out.println();
         }
         
-        
+        System.out.println(vaca.toString());
+        System.out.println(gato.toString());
+        System.out.println(ovelha.toString());
+        System.out.println(animal.toString());
      
 
     }

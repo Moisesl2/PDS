@@ -7,7 +7,7 @@ public class Ovelha extends Animal {
     }
 
     public void emitirSom(){
-        System.out.println("Bééé");
+        System.out.println("BÉÉÉÉ");
 
     }
 

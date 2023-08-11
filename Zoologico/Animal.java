@@ -29,7 +29,7 @@ public class Animal{
 
     @Override
     public String toString() {
-        return "Animal [nome=" + nome + ", numPatas=" + numPatas + "]";
+        return " nome: " + nome + ", Quantidade de patas: " + numPatas;
     }
 
     
