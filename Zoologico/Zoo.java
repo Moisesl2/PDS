@@ -9,33 +9,32 @@ public class Zoo {
 
         // Aqui, cada instancia eh de um tipo especializado
         if(vaca instanceof Animal){
-            System.out.println(" vaca eh Animal");
+            System.out.println(" vaca eh Animal  ");
         }
 
         if(gato instanceof Animal){
-            System.out.println(" gato eh Animal");
+            System.out.println(" gato eh Animal ");
         }
 
         if(ovelha instanceof Animal){
-            System.out.println(" ovelha eh Animal");
+            System.out.println(" ovelha eh Animal ");
             System.out.println("-----------\n");
         }
     
         for(int i=0 ; i < bichos.length ; i++) {
             System.out.print(bichos[i].getNome());
             if(bichos[i] instanceof Vaca){
-                System.out.print(" eh uma vaca");
+                System.out.print("eh uma vaca ");
             }
             if (bichos[i] instanceof Gato) {
-                System.out.print(" eh um gato "); 
+                System.out.print("eh um gato "); 
             }
             if (bichos[i] instanceof Ovelha) {
                 System.out.print("eh uma ovelha ");
             }
             
             bichos[i].emitirSom();
-            System.out.println();
-            
+           // System.out.println();
 
             if (bichos[i] instanceof Animal) {
                 System.out.println(bichos[i].getNome() + "eh um Animal. ");
