@@ -2,8 +2,6 @@ package Q1;
 
 import java.util.ArrayList;
 
-import javax.swing.event.SwingPropertyChangeSupport;
-
 public class EspecialAposentado extends CEspecial{
     private ArrayList<CEspecial> Aposentado  = new ArrayList<CEspecial>();
 
