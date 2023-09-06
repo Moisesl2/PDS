@@ -1,4 +1,4 @@
-package Interfaces.Q1;
+package Interfaces.Q2;
 
 public class SeguroDeVida implements Tributavel {
 

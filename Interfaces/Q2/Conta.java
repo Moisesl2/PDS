@@ -1,4 +1,4 @@
-package Interfaces.Q1;
+package Interfaces.Q2;
 
 public abstract class Conta {
     private String cod;
@@ -26,4 +26,5 @@ public abstract class Conta {
 
     public abstract double Saque(double valor);
     public abstract double deposito(double valor);
+    public abstract void obterSaldo();
 }

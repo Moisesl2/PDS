@@ -1,36 +1,32 @@
-package Interfaces.Q1;
+package Interfaces.Q2;
 
-public class CPoupanca extends Conta {
+
+
+public class CCorrente extends Conta implements Tributavel{
     private String usuario;
     private double saldo;
 
-
-    public CPoupanca(String cod, String usuario, double saldo) {
+    public CCorrente( String cod, String usuario, double saldo) {
         super(cod);
         this.usuario = usuario;
         this.saldo = saldo;
     }
 
-
     public String getUsuario() {
         return usuario;
     }
-
 
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
 
-
     public double getSaldo() {
         return saldo;
     }
 
-
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
-
 
     @Override
     public double Saque(double valor){
@@ -46,7 +42,6 @@ public class CPoupanca extends Conta {
         }
     }
 
-
     @Override
     public double deposito(double valor) {
         saldo += valor;
@@ -56,13 +51,29 @@ public class CPoupanca extends Conta {
     }
 
     @Override
+    public double calculaTributos() {
+        if(saldo > 0 ){
+            saldo = saldo - (saldo * 0.01);
+            return saldo;
+        }else{
+            System.out.println("Valor insuficiente, voce esta devendo tributos ao banco!");
+            return saldo;
+        }
+    }
+
+    @Override
+    public void obterSaldo() {
+        System.out.println("Seu saldo :" + saldo);
+    }
+    
+
+    @Override
     public String toString() {
         System.out.println("-----------");
-        return "Conta Poupanca: " + "\nCodigo: " + super.getCod() + "\nUsuario: " + getUsuario() + "\nSaldo: " + getSaldo() ;
+        return "Conta Corrente: " + "\nCodigo: " + super.getCod() + "\nUsuario: " + getUsuario() + "\nSaldo: " + getSaldo() ;
     }
 
     
-
 
     
 }
